@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Heart Beats For You</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff0f6;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff7eb3, #ff758c);
+      padding: 50px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* Love Bubble Effect */
+    #aboutHer {
+      position: relative;
+      background: #ffe0ec;
+      padding: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .bubble {
+      position: absolute;
+      background: rgba(255, 105, 180, 0.2);
+      border-radius: 50%;
+      pointer-events: none;
+      animation: float 10s infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      50% {
+        transform: translateY(-100px);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Folder Styles */
+    .folder {
+      background: #ff66a6;
+      color: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .folder:hover {
+      background: #ff4d94;
+    }
+
+    .folder-content {
+      display: none;
+      padding: 20px;
+      background: #ffe0ec;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    /* Lightbox Styles */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .lightbox img, .lightbox video {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      animation: zoomIn 0.3s ease;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      font-size: 2em;
+      color: white;
+      cursor: pointer;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Math Puzzles Section */
+    #mathPuzzles {
+      background: #f0f8ff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .puzzle {
+      margin-bottom: 20px;
+    }
+
+    .puzzle input {
+      margin-top: 10px;
+      padding: 5px;
+      width: 100%;
+    }
+
+    .puzzle button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background: #ff66a6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .puzzle button:hover {
+      background: #ff4d94;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>BOO THIS IS 4 U ❤</h1>
+  <p>A journey with you alee🤞.</p>
+</header>
+
+<section id="aboutHer">
+  <h2>About Her</h2>
+  <p contenteditable="true">Click here to write about her...</p>
+  <!-- Love Bubbles -->
+  <div class="bubble" style="width: 100px; height: 100px; top: 10%; left: 20%;"></div>
+  <div class="bubble" style="width: 150px; height: 150px; top: 50%; left: 70%;"></div>
+  <div class="bubble" style="width: 80px; height: 80px; top: 80%; left: 40%;"></div>
+</section>
+
+<section>
+  <h2>Our Memories</h2>
+
+  <!-- Folder 1 -->
+  <div class="folder" onclick="toggleFolder('folder1')">
+    <span>Prelude to Forever</span>
+    <span>▶</span>
+  </div>
+  <div id="folder1" class="folder-content">
+    <!-- Images -->
+    <img src="fp" alt="Memory 1" onclick="openLightbox(this)">
+    <!-- Add 11 more images -->
+    <!-- Audio -->
+    <audio controls autoplay loop>
+      <source src="path/to/kun_faya_kun.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <!-- Folder 2 -->
+  <div class="folder" onclick="toggleFolder('folder2')">
+    <span>Silent Spark</span>
+    <span>▶</span>
+  </div>
+  <div id="folder2" class="folder-content">
+    <!-- Images -->
+    <img src="D:\web pages\radom" alt="Memory 1" onclick="openLightbox(this)">
+
+::contentReference[oaicite:0]{index=0}
+ 
